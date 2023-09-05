@@ -22,6 +22,7 @@ public class Principal {
 
 		cliente.setCpf("12345678901");
 		cliente.setCpf("123456789A1");
+		
 
 	}
 }

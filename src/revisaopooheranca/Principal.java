@@ -1,5 +1,7 @@
 package revisaopooheranca;
 
+import aula11.Pessoa;
+
 public class Principal {
 
 //	Crie a classe Animal que tenha os métodos emitir 
