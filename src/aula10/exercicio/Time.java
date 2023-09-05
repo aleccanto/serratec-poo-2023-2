@@ -7,12 +7,10 @@ public class Time {
 	private int qtdJogadores;
 	private Jogador[] jogadores;
 
-//	1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-
 	public Time(String nome, int qtdJogadores) {
 		this.nome = nome;
-		this.qtdJogadores = qtdJogadores;
 		this.jogadores = new Jogador[qtdJogadores];
+		this.qtdJogadores = 0;
 	}
 
 	public String getNome() {
@@ -24,21 +22,20 @@ public class Time {
 	}
 
 	public void adicionarJogador(Jogador jogador) {
-		if (this.jogadores.length > qtdJogadores) {
-			int proximaPosicao = this.jogadores.length;
-			this.jogadores[proximaPosicao] = jogador;
+		if (qtdJogadores < this.jogadores.length) {
+			this.jogadores[qtdJogadores] = jogador;
+			this.qtdJogadores++;
 		} else {
 			System.out.println("O time atingiu a quantidade máxima de jogadores.");
 		}
 	}
 
 	public void listarJogadores() {
-		System.out.println("Os jogadores são do time " + this.nome + ":");
-//		for (int index = 0; index < this.jogadores.length; index++) {
-//			System.out.println(this.jogadores[index].getNome());
-//		}
+		System.out.println("Os jogadores do time " + this.nome + " são :");
 		for (Jogador j : this.jogadores) {
-			System.out.println(j.getNome());
+			if (j != null) {
+				System.out.println(j.getNome());
+			}
 		}
 	}
 

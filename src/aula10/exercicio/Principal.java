@@ -3,7 +3,6 @@ package aula10.exercicio;
 public class Principal {
 	public static void main(String[] args) {
 
-//										
 //		Crie uma classe Jogador com os atributos  (- nome) e (- idade).
 //		Crie uma classe Time com os atributos (- nome) e (- jogadores).
 // 		Crie dois jogadores e adicione ao time que será criado também.
