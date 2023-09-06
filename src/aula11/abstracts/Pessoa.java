@@ -1,4 +1,4 @@
-package aula11;
+package aula11.abstracts;
 
 public abstract class Pessoa {
 

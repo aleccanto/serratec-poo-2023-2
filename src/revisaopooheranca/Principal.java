@@ -1,6 +1,6 @@
 package revisaopooheranca;
 
-import aula11.Pessoa;
+import aula11.abstracts.Pessoa;
 
 public class Principal {
 
