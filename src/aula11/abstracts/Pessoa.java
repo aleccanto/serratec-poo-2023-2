@@ -1,5 +1,7 @@
 package aula11.abstracts;
 
+import aula12.finaleenum.Util;
+
 public abstract class Pessoa {
 
 	protected String nome;
@@ -37,7 +39,7 @@ public abstract class Pessoa {
 	}
 
 	public void setCpf(String cpf) {
-		if (cpf != null && cpf.length() == 11 && cpf.matches("\\d+")) {
+		if (Util.validarCpf(cpf)) {
 			this.cpf = cpf;
 			System.out.println("O cpf é válido.");
 		} else {
