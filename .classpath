@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/alecc/git/serratec-poo-2023-2/lib/postgresql-42.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
