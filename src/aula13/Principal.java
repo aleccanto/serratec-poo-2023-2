@@ -81,7 +81,9 @@ public class Principal {
 				Empresa empresa2 = new Empresa(rs.getInt("id"), rs.getString("nome"));
 				System.out.println(empresa2);
 			}
-
+			
+			rs.close();
+			stmt.close();
 			conexao.close();
 
 		}
